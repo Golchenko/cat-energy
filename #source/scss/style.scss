@@ -1,0 +1,25 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+
+@import "./all/fonts";
+@import "./all/normalize";
+@import "./all/variables";
+@import "./all/mixins";
+@import "./all/common";
+@import "./all/header";
+@import "./all/intro";
+@import "./all/category";
+@import "./all/advantages";
+@import "./all/example";
+@import "./all/map";
+@import "./all/footer";
+@import "./all/catalog";
+
+

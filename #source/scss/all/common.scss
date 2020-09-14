@@ -1,0 +1,82 @@
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.menu-text {
+    color: #ffffff;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.86px;
+    text-transform: uppercase;
+}
+
+.title-text {
+    color: #111111;
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 37.02px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.description-text {
+    color: #444444;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.button {
+    background-color: $green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover {
+        background-color: #4d8a28;
+    }
+    &:active {
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .container {
+        max-width: 708px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .container {
+        min-width: 280px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
